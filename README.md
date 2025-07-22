@@ -34,6 +34,7 @@ Perfect for:
   <img src="screenshots/menu-bar.png" width="280" alt="mac-locker menu bar">
   <img src="screenshots/unlock-screen.png" width="280" alt="mac-locker unlock">
   <img src="screenshots/locked-screen.png" width="280" alt="mac-locker locked">
+  <img src="screenshots/welcome.png" width="280" alt="mac-locker locked">
 </p>
 
 ---
