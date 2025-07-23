@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, KeyboardBlockerDelegate, NSP
             self.lockedWindows.removeAll()
 
             // Popover açıksa floating, kapalıysa statusBar seviyesi kullan
-            let windowLevel: NSWindow.Level = (self.popover?.isShown == true) ? .floating : .statusBar
+            let _: NSWindow.Level = (self.popover?.isShown == true) ? .floating : .statusBar
 
             for screen in NSScreen.screens {
                 let window = LockedWindow()
@@ -138,7 +138,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, KeyboardBlockerDelegate, NSP
         DispatchQueue.main.async {
             if self.lockedWindow == nil {
                 let lockedView = LockedView()
-                let hostingView = NSHostingView(rootView: lockedView)
+                _ = NSHostingView(rootView: lockedView)
                 self.lockedWindow = LockedWindow()
 
                 self.lockedWindow?.makeKeyAndOrderFront(nil)
