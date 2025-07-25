@@ -1,9 +1,9 @@
-# mac-locker 🔒
+# TapLocks 🔒
 
 Simple and beautiful macOS utility to temporarily lock your keyboard input.
 
 <p align="center">
-  <img src="screenshots/locked-screen.png" width="600" alt="mac-locker lock screen">
+  <img src="screenshots/locked-screen.png" width="600" alt="TapLocks lock screen">
 </p>
 
 ## ✨ Features
@@ -18,7 +18,7 @@ Simple and beautiful macOS utility to temporarily lock your keyboard input.
 
 ## 🧠 Why?
 
-Sometimes you just need to walk away from your Mac without logging out or sleeping it. `mac-locker` gives you that peace of mind by locking input while keeping everything visible.
+Sometimes you just need to walk away from your Mac without logging out or sleeping it. `TapLocks` gives you that peace of mind by locking input while keeping everything visible.
 
 Perfect for:
 - Shared desks and workspaces
@@ -31,10 +31,10 @@ Perfect for:
 ## 🖥️ Screenshots
 
 <p float="left">
-  <img src="screenshots/menu-bar.png" width="280" alt="mac-locker menu bar">
-  <img src="screenshots/unlock-screen.png" width="280" alt="mac-locker unlock">
-  <img src="screenshots/locked-screen.png" width="280" alt="mac-locker locked">
-  <img src="screenshots/welcome.png" width="280" alt="mac-locker locked">
+  <img src="screenshots/menu-bar.png" width="280" alt="TapLocks menu bar">
+  <img src="screenshots/unlock-screen.png" width="280" alt="TapLocks unlock">
+  <img src="screenshots/locked-screen.png" width="280" alt="TapLocks locked">
+  <img src="screenshots/welcome.png" width="280" alt="TapLocks locked">
 </p>
 
 ---
@@ -42,6 +42,6 @@ Perfect for:
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/akifkomurcu/mac-locker.git
-cd mac-locker
-open mac-locker.xcodeproj
+git clone https://github.com/akifkomurcu/TapLocks.git
+cd TapLocks
+open TapLocks.xcodeproj

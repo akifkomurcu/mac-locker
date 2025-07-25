@@ -24,7 +24,7 @@ struct WelcomeOverlay: View {
                 .multilineTextAlignment(.center)
 
             Text("""
-            mac-locker allows you to temporarily lock your screen whenever you choose. While locked, keyboard input is disabled. You can easily unlock your screen at any time by simply clicking anywhere.
+            TapLocks allows you to temporarily lock your screen whenever you choose. While locked, keyboard input is disabled. You can easily unlock your screen at any time by simply clicking anywhere.
             """)
                 .font(.body)
                 .multilineTextAlignment(.leading)

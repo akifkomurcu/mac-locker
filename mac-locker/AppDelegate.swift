@@ -89,8 +89,39 @@ class AppDelegate: NSObject, NSApplicationDelegate, KeyboardBlockerDelegate, NSP
         if !UserDefaults.standard.bool(forKey: "welcomeWindow") {
             showWelcomePopup()
         }
+        
+        let mainMenu = NSMenu()
+        let appMenuItem = NSMenuItem()
+        mainMenu.addItem(appMenuItem)
+        NSApp.mainMenu = mainMenu
+
+        let appMenu = NSMenu()
+        appMenuItem.submenu = appMenu
+
+        let settingsMenuItem = NSMenuItem(
+            title: "Settings...",
+            action: #selector(openSettings(_:)),
+            keyEquivalent: ","
+        )
+        settingsMenuItem.target = self
+        appMenu.addItem(settingsMenuItem)
 
     }
+    
+    @objc func openSettings(_ sender: Any?) {
+        let settingsWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 400, height: 200),
+            styleMask: [.titled, .closable],
+            backing: .buffered,
+            defer: false
+        )
+        settingsWindow.isReleasedWhenClosed = false
+        settingsWindow.center()
+        settingsWindow.contentView = NSHostingView(rootView: SettingsView())
+        settingsWindow.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+
     
     func showWelcomePopup() {
         let popupView = NSHostingView(rootView:
